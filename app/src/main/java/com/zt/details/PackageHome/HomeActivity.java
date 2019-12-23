@@ -32,11 +32,11 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
         initComponents();
         onBottomItemClicked();
+        navigation.setSelectedItemId(R.id.home);
     }
 
     private void initComponents() {
         navigation = findViewById(R.id.navigation) ;
-        navigation.setSelectedItemId(R.id.home);
     }
 
     private void setFragment(Fragment fragment, String Title) {

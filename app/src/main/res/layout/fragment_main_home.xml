@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView
-    android:fillViewport="true"
+<ScrollView android:fillViewport="true"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PackageHome.MainHomeFragment">
+    tools:context=".PackageHome.MainHomeFragment"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
    <LinearLayout
        android:background="@color/ColorWhite"
@@ -13,12 +13,23 @@
        android:layout_height="match_parent"
        android:orientation="vertical">
 
-       <ImageView
+       <androidx.cardview.widget.CardView
+           app:cardCornerRadius="10dp"
            android:layout_width="match_parent"
            android:layout_height="180dp"
-           android:src="@drawable/offers"
-           android:scaleType="fitXY"
-           />
+           android:layout_marginEnd="10dp"
+           android:layout_marginStart="10dp"
+           android:layout_marginBottom="10dp"
+           android:layout_marginTop="10dp"
+           >
+           <ImageView
+               android:layout_width="match_parent"
+               android:layout_height="match_parent"
+               android:src="@drawable/offers"
+               android:scaleType="fitXY"
+               />
+       </androidx.cardview.widget.CardView>
+
 
        <RelativeLayout
            android:layout_marginTop="5dp"
@@ -36,8 +47,10 @@
                />
 
            <Button
-               android:layout_width="wrap_content"
-               android:layout_height="35dp"
+               android:layout_marginEnd="5dp"
+               android:textSize="12sp"
+               android:layout_width="120dp"
+               android:layout_height="30dp"
                android:text="@string/more"
                android:layout_alignParentEnd="true"
                android:textColor="@color/ColorWhite"
@@ -49,7 +62,8 @@
 
        <androidx.recyclerview.widget.RecyclerView
            android:layout_width="match_parent"
-           android:layout_height="wrap_content"/>
+           android:layout_height="wrap_content"
+           android:id="@+id/recycle_product"/>
 
        <RelativeLayout
            android:layout_marginTop="5dp"
@@ -67,8 +81,10 @@
                />
 
            <Button
-               android:layout_width="wrap_content"
-               android:layout_height="35dp"
+               android:layout_marginEnd="5dp"
+               android:textSize="12sp"
+               android:layout_width="120dp"
+               android:layout_height="30dp"
                android:text="@string/more"
                android:layout_alignParentEnd="true"
                android:textColor="@color/ColorWhite"
@@ -80,7 +96,8 @@
 
        <androidx.recyclerview.widget.RecyclerView
            android:layout_width="match_parent"
-           android:layout_height="wrap_content"/>
+           android:layout_height="wrap_content"
+           android:id="@+id/recycle_rate"/>
 
        <RelativeLayout
            android:layout_marginTop="5dp"
@@ -98,8 +115,10 @@
                />
 
            <Button
-               android:layout_width="wrap_content"
-               android:layout_height="35dp"
+               android:layout_marginEnd="5dp"
+               android:textSize="12sp"
+               android:layout_width="120dp"
+               android:layout_height="30dp"
                android:text="@string/more"
                android:layout_alignParentEnd="true"
                android:textColor="@color/ColorWhite"
@@ -111,7 +130,8 @@
 
        <androidx.recyclerview.widget.RecyclerView
            android:layout_width="match_parent"
-           android:layout_height="wrap_content"/>
+           android:layout_height="wrap_content"
+           android:id="@+id/recycle_discount"/>
 
 
    </LinearLayout>

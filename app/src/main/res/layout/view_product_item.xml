@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView
+    app:cardCornerRadius="8dp"
+    android:layout_margin="5dp"
     android:padding="3dp"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
 
     <LinearLayout
+        android:id="@+id/card_parent"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical">
@@ -21,6 +25,17 @@
             />
 
         <TextView
+            android:id="@+id/txt_price"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:textColor="@color/colorBlack"
+            android:textSize="14sp"
+            />
+
+        <TextView
+            android:id="@+id/txt_name"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"
             android:layout_width="match_parent"
@@ -28,9 +43,10 @@
             android:textAlignment="center"
             android:textColor="@color/colorBlack"
             android:textSize="14sp"
-            android:lines="2"/>
+            />
 
         <RatingBar
+            android:layout_marginBottom="5dp"
             style="@style/Widget.AppCompat.RatingBar.Small"
             android:layout_gravity="center"
             android:layout_width="wrap_content"
