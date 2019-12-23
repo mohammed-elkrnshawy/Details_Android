@@ -13,6 +13,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.zt.details.PackageTry.AdapterTry;
+import com.zt.details.PackageTry.AdapterTryCart;
 import com.zt.details.PackageTry.ClassTry;
 import com.zt.details.R;
 
@@ -31,7 +32,7 @@ public class CartFragment extends Fragment {
     private ClassTry classTry;
     private List<ClassTry> tryList=new ArrayList<>();
     private LinearLayoutManager layoutManager ;
-    private AdapterTry adapterTry;
+    private AdapterTryCart adapterTry;
 
     @BindView(R.id.recycle_cart)
     RecyclerView recycle_cart;
@@ -64,7 +65,7 @@ public class CartFragment extends Fragment {
         layoutManager = new LinearLayoutManager(getContext()) ;
         recycle_cart.setLayoutManager(layoutManager);
         //recycle.setHasFixedSize(true);
-        adapterTry = new AdapterTry(getContext() , tryList);
+        adapterTry = new AdapterTryCart(getContext() , tryList);
         recycle_cart.setAdapter(adapterTry);
 
 
