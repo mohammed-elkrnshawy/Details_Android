@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/ColorGray"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PackageAuth.AuthActivity">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        />
+
+
+    <RelativeLayout
+        android:layout_marginBottom="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <Button
+            android:layout_margin="5dp"
+            android:id="@+id/btn_login"
+            android:background="@drawable/shape_btn"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/ColorWhite"
+            android:textSize="14sp"
+            android:text="@string/login"
+            android:layout_width="150dp"
+            android:layout_height="35dp"/>
+
+        <Button
+            android:layout_margin="5dp"
+            android:id="@+id/btn_register"
+            android:background="@drawable/shape_btn_gray"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/btn_login"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14sp"
+            android:text="@string/register"
+            android:layout_width="150dp"
+            android:layout_height="35dp"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

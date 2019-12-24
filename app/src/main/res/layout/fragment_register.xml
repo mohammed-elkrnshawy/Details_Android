@@ -73,6 +73,7 @@
 
 
         <Button
+            android:id="@+id/btn_register"
             android:background="@drawable/shape_btn"
             android:layout_marginTop="30dp"
             android:layout_centerHorizontal="true"
@@ -85,9 +86,9 @@
 
 
         <LinearLayout
+            android:layout_below="@+id/btn_register"
             android:orientation="vertical"
             android:layout_margin="15dp"
-            android:layout_alignParentBottom="true"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 

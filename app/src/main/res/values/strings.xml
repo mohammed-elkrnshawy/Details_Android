@@ -21,4 +21,8 @@
     <string name="category">Category</string>
     <string name="continue_shop">Continue</string>
     <string name="total">Total</string>
+    <string name="forget_password">Forget PAssword</string>
+    <string name="are_you_forget_password">Are you forget password</string>
+    <string name="no_have_account">Have you account ?</string>
+    <string name="create_account">Create account</string>
 </resources>
