@@ -33,4 +33,18 @@
     <string name="shop_new">اشترى الان</string>
     <string name="color">اللون</string>
     <string name="size">المقاس</string>
+    <string name="delivery">التوصيل الى</string>
+    <string name="edit">تعديل</string>
+    <string name="delivery_way">طريقة التوصيل</string>
+    <string name="payment_way">طريقة الدفع</string>
+    <string name="ok">التأكيد</string>
+    <string name="add_address">اضافة عنوان جديد</string>
+    <string name="country">الدولة</string>
+    <string name="city">المدينة</string>
+    <string name="street">الشارع</string>
+    <string name="add_phone">اضافة رقم الهاتف</string>
+    <string name="phone">رقم الهاتف</string>
+    <string name="elec_payment">الدفع الالكترونى</string>
+    <string name="cash_payment">الدفع عند الاستلام</string>
+    <string name="delivery_cost">تكلفة الشحن</string>
 </resources>

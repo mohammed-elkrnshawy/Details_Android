@@ -9,7 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PackageAuth.AuthActivity"></activity>
+        <activity android:name=".PackageCart.CartPaymentActivity"></activity>
+        <activity android:name=".PackageCart.DeliveryActivity" />
+        <activity android:name=".PackageCart.CartCompleteActivity" />
+        <activity android:name=".PackageAuth.AuthActivity" />
         <activity android:name=".PackageAuth.LoginActivity" />
         <activity android:name=".PackageAuth.ForgetPasswordActivity" />
         <activity android:name=".PackageAuth.RegisterActivity" />

@@ -32,4 +32,18 @@
     <string name="shop_new">Buy Now</string>
     <string name="color">Color</string>
     <string name="size">Size</string>
+    <string name="delivery">Delivery</string>
+    <string name="edit">Edit</string>
+    <string name="delivery_way">Delivery Way</string>
+    <string name="payment_way">Payment Way</string>
+    <string name="ok">Confirm</string>
+    <string name="add_address">Add Address</string>
+    <string name="country">Country</string>
+    <string name="city">City</string>
+    <string name="street">Street</string>
+    <string name="add_phone">Add Phone</string>
+    <string name="phone">Phone</string>
+    <string name="elec_payment">Electronic Payment</string>
+    <string name="cash_payment">Cash Payment</string>
+    <string name="delivery_cost">Delivery Cost</string>
 </resources>

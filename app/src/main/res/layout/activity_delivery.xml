@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:background="@color/ColorGray"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PackageCart.DeliveryActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_marginTop="20dp"
+        android:id="@+id/cart"
+        android:layout_marginEnd="15dp"
+        android:layout_marginStart="15dp"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="10dp">
+
+
+        <LinearLayout
+            android:paddingTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/colorBlack"
+                android:text="@string/add_address"/>
+
+            <EditText
+                android:textSize="14sp"
+                android:id="@+id/edtEmail"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:hint="@string/country"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_edttext"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+
+            <EditText
+                android:textSize="14sp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:inputType="text"
+                android:id="@+id/edtUsername"
+                android:hint="@string/city"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_edttext"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+
+            <EditText
+                android:textSize="14sp"
+                android:layout_marginBottom="20dp"
+                android:drawablePadding="10dp"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:id="@+id/edtPassword"
+                android:hint="@string/street"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_edttext"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+
+            <TextView
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:textColor="@color/colorBlack"
+                android:text="@string/add_phone"/>
+
+            <EditText
+                android:inputType="number"
+                android:textSize="14sp"
+                android:id="@+id/edtPhone"
+                android:paddingStart="15dp"
+                android:paddingEnd="15dp"
+                android:hint="@string/phone"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_edttext"
+                android:layout_width="match_parent"
+                android:layout_height="35dp" />
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:layout_marginBottom="20dp"
+        android:id="@+id/btn_continue"
+        android:background="@drawable/shape_btn"
+        android:layout_marginTop="25dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/cart"
+        android:textColor="@color/ColorWhite"
+        android:textSize="14sp"
+        android:text="@string/continue_shop"
+        android:layout_width="150dp"
+        android:layout_height="35dp"/>
+
+
+</RelativeLayout>
