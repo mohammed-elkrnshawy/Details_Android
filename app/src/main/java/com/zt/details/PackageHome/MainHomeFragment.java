@@ -11,6 +11,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.RelativeLayout;
 
 import com.zt.details.PackageTry.AdapterTry;
 import com.zt.details.PackageTry.ClassTry;
@@ -36,6 +37,7 @@ public class MainHomeFragment extends Fragment {
     @BindView(R.id.recycle_rate)
     RecyclerView recycle_rate;
 
+    private RelativeLayout rlv_search;
 
     private ClassTry classTry;
     private List<ClassTry> tryList=new ArrayList<>();
@@ -44,6 +46,11 @@ public class MainHomeFragment extends Fragment {
 
     public MainHomeFragment() {
         // Required empty public constructor
+    }
+
+    public MainHomeFragment(RelativeLayout rlv_search) {
+        // Required empty public constructor
+        this.rlv_search=rlv_search;
     }
 
 
@@ -88,4 +95,15 @@ public class MainHomeFragment extends Fragment {
         return view;
     }
 
+    @Override
+    public void onResume() {
+        super.onResume();
+        rlv_search.setVisibility(View.VISIBLE);
+    }
+
+    @Override
+    public void onPause() {
+        super.onPause();
+        rlv_search.setVisibility(View.GONE);
+    }
 }

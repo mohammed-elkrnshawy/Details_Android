@@ -2,10 +2,14 @@ package com.zt.details.PackageHome;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 
+import android.content.Context;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
@@ -14,11 +18,19 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.zt.details.PackageCart.CartFragment;
 import com.zt.details.R;
 
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 public class HomeActivity extends AppCompatActivity {
 
     private BottomNavigationView navigation;
+    private RelativeLayout rlv_Search;
 
-   /* private static userData userObject;
+    @BindView(R.id.toolbar)
+    Toolbar toolbar;
+
+
+    /* private static userData userObject;
     private String stringType;
     private RelativeLayout relativeFlight,relativeHotel,relativeCar;
     private ImageView imgFlight,imgHotel,imgCar;
@@ -30,7 +42,9 @@ public class HomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
+        ButterKnife.bind(this);
         initComponents();
+        setToolBar();
         onBottomItemClicked();
         navigation.setSelectedItemId(R.id.home);
     }
@@ -57,7 +71,7 @@ public class HomeActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                 switch (menuItem.getItemId()){
                     case R.id.home:
-                        setFragment(new MainHomeFragment(),getResources().getString(R.string.home));
+                        setFragment(new MainHomeFragment(rlv_Search),getResources().getString(R.string.home));
                         return true;
                     case R.id.cart:
                         setFragment(new CartFragment(),getResources().getString(R.string.cart));
@@ -73,4 +87,45 @@ public class HomeActivity extends AppCompatActivity {
             }
         });
     }
+
+    private void setToolBar(){
+        setSupportActionBar(toolbar);
+        final LayoutInflater inflator = (LayoutInflater) this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        View view = null;
+        if (inflator != null) {
+            view = inflator.inflate(R.layout.bar_home, null);
+        }
+
+        rlv_Search = view.findViewById(R.id.rlv_Search) ;
+
+        toolbar.addView(view);
+
+
+        /*menu.setOnClickListener(v -> {
+            if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
+                drawerLayout.closeDrawers();
+            } else {
+                drawerLayout.openDrawer(GravityCompat.START);
+            }
+
+        });
+
+        cart.setOnClickListener(v -> {
+            if (SharedClass.isLogin) {
+                Intent intent = new Intent(HomeActivity.this, CartsActivity.class);
+                intent.putExtra("data", userdata);
+                startActivity(intent);
+            } else {
+                Toast.makeText(HomeActivity.this, getString(R.string.mustLogin), Toast.LENGTH_SHORT).show();
+            }
+        });
+        search.setOnClickListener(v -> {
+            Intent intent = new Intent(HomeActivity.this, SearchBranchActivity.class);
+            intent.putExtra("userObject", userdata);
+            startActivity(intent);
+        });*/
+
+    }
+
+
 }

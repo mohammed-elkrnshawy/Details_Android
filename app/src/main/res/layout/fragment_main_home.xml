@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView android:fillViewport="true"
+<ScrollView
+    android:fillViewport="true"
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,28 +9,33 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
    <LinearLayout
-       android:background="@color/ColorWhite"
+       android:background="@color/ColorGray"
        android:layout_width="match_parent"
        android:layout_height="match_parent"
        android:orientation="vertical">
 
-       <androidx.cardview.widget.CardView
-           app:cardCornerRadius="10dp"
-           android:layout_width="match_parent"
-           android:layout_height="180dp"
+       <RelativeLayout
            android:layout_marginEnd="10dp"
            android:layout_marginStart="10dp"
-           android:layout_marginBottom="10dp"
-           android:layout_marginTop="10dp"
-           >
-           <ImageView
-               android:layout_width="match_parent"
-               android:layout_height="match_parent"
-               android:src="@drawable/offers"
-               android:scaleType="fitXY"
-               />
-       </androidx.cardview.widget.CardView>
+           android:background="@color/ColorGray"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
 
+           <androidx.cardview.widget.CardView
+               android:layout_marginTop="10dp"
+               app:cardCornerRadius="10dp"
+               android:layout_width="match_parent"
+               android:layout_height="180dp"
+               >
+               <ImageView
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:src="@drawable/offers"
+                   android:scaleType="fitXY"
+                   />
+           </androidx.cardview.widget.CardView>
+
+       </RelativeLayout>
 
        <RelativeLayout
            android:layout_marginTop="5dp"

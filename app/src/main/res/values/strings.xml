@@ -46,4 +46,8 @@
     <string name="elec_payment">Electronic Payment</string>
     <string name="cash_payment">Cash Payment</string>
     <string name="delivery_cost">Delivery Cost</string>
+    <string name="register_trader">Register as trader</string>
+    <string name="about">About</string>
+    <string name="logout">Logout</string>
+    <string name="search">Search</string>
 </resources>

@@ -1,14 +1,273 @@
-<?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
+<ScrollView android:background="@color/ColorGray"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".PackageHome.ProfileFragment">
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:orientation="vertical">
 
-</FrameLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="110dp">
+
+            <RelativeLayout
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true">
+                <TextView
+                    android:id="@+id/txt_name_primary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="اية خالد"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_below="@+id/txt_name_primary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="weare@gmail.com"
+                    android:textSize="18sp"
+                    android:textColor="@color/colorBlack"
+                    android:textStyle="bold"/>
+            </RelativeLayout>
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:src="@drawable/user"
+                android:layout_margin="20dp"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"/>
+
+        </RelativeLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_margin="10dp"
+            app:cardCornerRadius="10dp"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:id="@+id/txt_name"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="أية خالد"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="14sp"
+                        android:drawableStart="@drawable/ic_profile"
+                        android:drawablePadding="10dp"/>
+
+                    <TextView
+                        android:layout_alignParentEnd="true"
+                        android:id="@+id/txt_edit_name"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/edit"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="12sp"
+                        android:drawableStart="@drawable/ic_edit"
+                        android:drawablePadding="10dp"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height=".70dp"
+                    android:background="@color/ColorGray"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="2.5dp"
+                    android:layout_marginBottom="2.5dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="ghjhfjh@gmail.com"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="14sp"
+                        android:drawableStart="@drawable/ic_mail"
+                        android:drawablePadding="10dp"/>
+
+                    <TextView
+                        android:layout_alignParentEnd="true"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/edit"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="12sp"
+                        android:drawableStart="@drawable/ic_edit"
+                        android:drawablePadding="10dp"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height=".70dp"
+                    android:background="@color/ColorGray"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="2.5dp"
+                    android:layout_marginBottom="2.5dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/forget_password"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="12sp"
+                        android:drawableStart="@drawable/ic_password"
+                        android:drawablePadding="10dp"/>
+
+                    <TextView
+                        android:layout_alignParentEnd="true"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/edit"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="12sp"
+                        android:drawableStart="@drawable/ic_edit"
+                        android:drawablePadding="10dp"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height=".70dp"
+                    android:background="@color/ColorGray"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="2.5dp"
+                    android:layout_marginBottom="2.5dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="المنصورة - مصر"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="14sp"
+                        android:drawableStart="@drawable/ic_location"
+                        android:drawablePadding="10dp"/>
+
+                    <TextView
+                        android:layout_alignParentEnd="true"
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/edit"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="12sp"
+                        android:drawableStart="@drawable/ic_edit"
+                        android:drawablePadding="10dp"/>
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height=".70dp"
+                    android:background="@color/ColorGray"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="2.5dp"
+                    android:layout_marginBottom="2.5dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/register_trader"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="14sp"
+                        android:drawableStart="@drawable/ic_trader"
+                        android:drawablePadding="10dp"/>
+
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height=".70dp"
+                    android:background="@color/ColorGray"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginTop="2.5dp"
+                    android:layout_marginBottom="2.5dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:gravity="center_vertical"
+                        android:padding="10dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/about"
+                        android:textColor="@color/colorBlack"
+                        android:textSize="14sp"
+                        android:drawableStart="@drawable/ic_about"
+                        android:drawablePadding="10dp"/>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:gravity="center_vertical"
+                android:padding="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/logout"
+                android:textColor="@color/colorBlack"
+                android:textSize="14sp"
+                android:drawableStart="@drawable/ic_mail"
+                android:drawablePadding="10dp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>
