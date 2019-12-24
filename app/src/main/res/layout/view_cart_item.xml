@@ -36,10 +36,9 @@
 
                 <TextView
                     android:padding="2dp"
-                    android:textAlignment="textEnd"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="14sp"
+                    android:textSize="12sp"
                     android:textColor="@color/colorBlack"
                     android:text="تيشرت الجوكر العالمى"/>
 
@@ -48,7 +47,7 @@
                     android:textAlignment="textStart"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:textSize="16sp"
+                    android:textSize="14sp"
                     android:textColor="@color/colorPrimaryDark"
                     android:text="502.00 $"/>
 

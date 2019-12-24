@@ -9,12 +9,13 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".PackageAuth.LoginActivity"></activity>
+        <activity android:name=".PackageAuth.AuthActivity"></activity>
+        <activity android:name=".PackageAuth.LoginActivity" />
         <activity android:name=".PackageAuth.ForgetPasswordActivity" />
         <activity android:name=".PackageAuth.RegisterActivity" />
         <activity android:name=".PackageHome.HomeActivity" />
         <activity android:name=".PackageProductDetails.ProductDetailsActivity" />
-        <activity android:name=".PackageAuth.AuthActivity">
+        <activity android:name=".PackageAuth.SplashActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

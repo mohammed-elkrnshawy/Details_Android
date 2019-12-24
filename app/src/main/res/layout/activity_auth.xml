@@ -36,7 +36,7 @@
         <Button
             android:layout_margin="5dp"
             android:id="@+id/btn_register"
-            android:background="@drawable/shape_btn_gray"
+            android:background="@drawable/shape_btn_gray_border"
             android:layout_centerHorizontal="true"
             android:layout_below="@id/btn_login"
             android:textColor="@color/colorPrimary"

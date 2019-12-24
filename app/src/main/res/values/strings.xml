@@ -25,4 +25,11 @@
     <string name="are_you_forget_password">Are you forget password</string>
     <string name="no_have_account">Have you account ?</string>
     <string name="create_account">Create account</string>
+    <string name="product">Product</string>
+    <string name="details">Details</string>
+    <string name="rate">Rate</string>
+    <string name="add_to_cart">Add Cart</string>
+    <string name="shop_new">Buy Now</string>
+    <string name="color">Color</string>
+    <string name="size">Size</string>
 </resources>

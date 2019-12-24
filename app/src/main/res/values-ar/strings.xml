@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Details</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="email">البريد الالكترونى</string>
+    <string name="password">كلمة المرور</string>
+    <string name="login">الدخول</string>
+    <string name="username">اسم المستخدم</string>
+    <string name="register">انشاء جديد</string>
+    <string name="accept">موافق</string>
+    <string name="terms"><u>الشروط و الاحكام</u></string>
+    <string name="send">ارسال</string>
+    <string name="good_product">منتجات متميزة</string>
+    <string name="more">المزيد</string>
+    <string name="most_rate">اعلى التقييمات</string>
+    <string name="discount">تخفيضات</string>
+    <string name="home">الرئيسية</string>
+    <string name="cart">العربة</string>
+    <string name="profile">الحساب</string>
+    <string name="category">الاقسام</string>
+    <string name="continue_shop">استمرار</string>
+    <string name="total">الاجمالى</string>
+    <string name="forget_password">نسيت كلمة المرور</string>
+    <string name="are_you_forget_password">نسيت كلمة المرور</string>
+    <string name="no_have_account">هل تملك حساب ؟</string>
+    <string name="create_account">انشاء حساب جديد</string>
+    <string name="product">المنتج</string>
+    <string name="details">التفاصيل</string>
+    <string name="rate">تقييمات</string>
+    <string name="add_to_cart">اضافة الى العربة</string>
+    <string name="shop_new">اشترى الان</string>
+    <string name="color">اللون</string>
+    <string name="size">المقاس</string>
+</resources>

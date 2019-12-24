@@ -1,6 +1,7 @@
 package com.zt.details.PackageTry;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -10,6 +11,7 @@ import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.zt.details.PackageProductDetails.ProductDetailsActivity;
 import com.zt.details.R;
 
 import java.util.List;
@@ -53,16 +55,14 @@ public class AdapterTry extends RecyclerView.Adapter<AdapterTry.ViewHolder> {
             holder.txtOffer.setText(String.format("%s %s", offerList.get(i).getOffer(), offerList.get(i).getCurrency()));
         */
 
-        /*holder.layoutTrip.setOnClickListener(new View.OnClickListener() {
+        holder.card_parent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(context, SvagoDetailsActivity.class);
-                intent.putExtra(Constant.userFlag,userObject);
-                intent.putExtra("tripID",offerList.get(i).getId());
+                Intent intent=new Intent(context, ProductDetailsActivity.class);
                 context.startActivity(intent);
 
             }
-        });*/
+        });
 
     }
 

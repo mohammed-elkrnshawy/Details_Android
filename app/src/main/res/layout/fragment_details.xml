@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PackageProductDetails.DetailsFragment">
+
+    <RelativeLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="الماركة"
+            android:padding="5dp"/>
+
+        <TextView
+            android:id="@+id/a1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:padding="5dp"
+            android:text="IZO"/>
+
+        <TextView
+            android:layout_below="@id/a"
+            android:id="@+id/a2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="النوع"
+            android:padding="5dp"/>
+
+        <TextView
+            android:layout_below="@id/a"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:padding="5dp"
+            android:text="تيشرتات رجالى"/>
+
+        <TextView
+            android:layout_below="@id/a2"
+            android:id="@+id/a3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="الوصف"
+            android:padding="5dp"/>
+
+        <TextView
+            android:layout_below="@id/a3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:text="سويت شيرت قطن سادة بغطاء للرأس ورباط بجيوب متصلة واطراف مضلعة"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
