@@ -51,4 +51,5 @@
     <string name="about">عن الشركة</string>
     <string name="logout">خروج</string>
     <string name="search">بحث</string>
+    <string name="service">خدمات</string>
 </resources>

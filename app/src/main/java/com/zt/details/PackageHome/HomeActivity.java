@@ -82,6 +82,9 @@ public class HomeActivity extends AppCompatActivity {
                     case R.id.more:
                         setFragment(new MoreFragment(),getResources().getString(R.string.more));
                         return true;
+                    case R.id.service:
+                        setFragment(new ServiceFragment(),getResources().getString(R.string.service));
+                        return true;
                 }
                 return false ;
             }
