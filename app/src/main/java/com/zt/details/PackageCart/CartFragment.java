@@ -7,11 +7,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.zt.details.PackageHome.HomeActivity;
 import com.zt.details.PackageTry.AdapterTryCart;
 import com.zt.details.PackageTry.ClassTry;
 import com.zt.details.R;
@@ -38,10 +40,16 @@ public class CartFragment extends Fragment {
     @BindView(R.id.btn_continue)
     Button btn_continue;
 
+    private TextView txtTitle;
+
     public CartFragment() {
         // Required empty public constructor
     }
 
+    public CartFragment(TextView txt) {
+        // Required empty public constructor
+        this.txtTitle=txt;
+    }
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -79,4 +87,10 @@ public class CartFragment extends Fragment {
         return view;
     }
 
+    @Override
+    public void onResume() {
+        super.onResume();
+        txtTitle.setText(getResources().getString(R.string.cart));
+        HomeActivity.changeBar(R.id.cart,getResources().getString(R.string.cart));
+    }
 }

@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.GridLayoutManager;
@@ -37,6 +38,7 @@ public class MainHomeFragment extends Fragment {
     RecyclerView recycle_rate;
 
     private RelativeLayout rlv_search;
+    private TextView txtTitle;
 
     private ClassTry classTry;
     private List<ClassTry> tryList=new ArrayList<>();
@@ -47,9 +49,10 @@ public class MainHomeFragment extends Fragment {
         // Required empty public constructor
     }
 
-    public MainHomeFragment(RelativeLayout rlv_search) {
+    public MainHomeFragment(RelativeLayout rlv_search,TextView txt) {
         // Required empty public constructor
         this.rlv_search=rlv_search;
+        this.txtTitle=txt;
     }
 
 
@@ -98,6 +101,8 @@ public class MainHomeFragment extends Fragment {
     public void onResume() {
         super.onResume();
         rlv_search.setVisibility(View.VISIBLE);
+        txtTitle.setText(getResources().getString(R.string.home));
+        HomeActivity.changeBar(R.id.home,getResources().getString(R.string.home));
     }
 
     @Override

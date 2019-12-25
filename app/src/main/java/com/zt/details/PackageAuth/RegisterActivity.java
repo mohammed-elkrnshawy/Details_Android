@@ -27,8 +27,8 @@ public class RegisterActivity extends AppCompatActivity {
         btn_register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                finishAffinity();
                 startActivity(new Intent(RegisterActivity.this, HomeActivity.class));
+                finishAffinity();
             }
         });
 

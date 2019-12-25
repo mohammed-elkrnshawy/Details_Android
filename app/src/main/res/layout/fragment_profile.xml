@@ -11,7 +11,7 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="110dp">
+            android:layout_height="90dp">
 
             <RelativeLayout
                 android:padding="10dp"
@@ -40,7 +40,7 @@
                 android:layout_width="70dp"
                 android:layout_height="70dp"
                 android:src="@drawable/user"
-                android:layout_margin="20dp"
+                android:layout_marginEnd="20dp"
                 android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"/>
 
@@ -65,7 +65,10 @@
                     <TextView
                         android:id="@+id/txt_name"
                         android:gravity="center_vertical"
-                        android:padding="10dp"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingStart="10dp"
+                        android:layout_marginEnd="10dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="أية خالد"
@@ -78,8 +81,10 @@
                         android:layout_alignParentEnd="true"
                         android:id="@+id/txt_edit_name"
                         android:gravity="center_vertical"
-                        android:padding="10dp"
-                        android:layout_width="wrap_content"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingStart="10dp"
+                        android:layout_marginEnd="10dp"                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/edit"
                         android:textColor="@color/colorBlack"
@@ -102,8 +107,10 @@
                     android:layout_height="wrap_content">
                     <TextView
                         android:gravity="center_vertical"
-                        android:padding="10dp"
-                        android:layout_width="wrap_content"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingStart="10dp"
+                        android:layout_marginEnd="10dp"                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="ghjhfjh@gmail.com"
                         android:textColor="@color/colorBlack"
@@ -114,8 +121,10 @@
                     <TextView
                         android:layout_alignParentEnd="true"
                         android:gravity="center_vertical"
-                        android:padding="10dp"
-                        android:layout_width="wrap_content"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingStart="10dp"
+                        android:layout_marginEnd="10dp"                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/edit"
                         android:textColor="@color/colorBlack"
@@ -138,8 +147,10 @@
                     android:layout_height="wrap_content">
                     <TextView
                         android:gravity="center_vertical"
-                        android:padding="10dp"
-                        android:layout_width="wrap_content"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingStart="10dp"
+                        android:layout_marginEnd="10dp"                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/forget_password"
                         android:textColor="@color/colorBlack"
@@ -150,8 +161,10 @@
                     <TextView
                         android:layout_alignParentEnd="true"
                         android:gravity="center_vertical"
-                        android:padding="10dp"
-                        android:layout_width="wrap_content"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingStart="10dp"
+                        android:layout_marginEnd="10dp"                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/edit"
                         android:textColor="@color/colorBlack"
@@ -174,8 +187,10 @@
                     android:layout_height="wrap_content">
                     <TextView
                         android:gravity="center_vertical"
-                        android:padding="10dp"
-                        android:layout_width="wrap_content"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingStart="10dp"
+                        android:layout_marginEnd="10dp"                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="المنصورة - مصر"
                         android:textColor="@color/colorBlack"
@@ -186,8 +201,10 @@
                     <TextView
                         android:layout_alignParentEnd="true"
                         android:gravity="center_vertical"
-                        android:padding="10dp"
-                        android:layout_width="wrap_content"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingStart="10dp"
+                        android:layout_marginEnd="10dp"                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/edit"
                         android:textColor="@color/colorBlack"
@@ -210,8 +227,10 @@
                     android:layout_height="wrap_content">
                     <TextView
                         android:gravity="center_vertical"
-                        android:padding="10dp"
-                        android:layout_width="wrap_content"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingStart="10dp"
+                        android:layout_marginEnd="10dp"                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/register_trader"
                         android:textColor="@color/colorBlack"
@@ -235,8 +254,10 @@
                     android:layout_height="wrap_content">
                     <TextView
                         android:gravity="center_vertical"
-                        android:padding="10dp"
-                        android:layout_width="wrap_content"
+                        android:paddingTop="5dp"
+                        android:paddingBottom="5dp"
+                        android:paddingStart="10dp"
+                        android:layout_marginEnd="10dp"                        android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="@string/about"
                         android:textColor="@color/colorBlack"
@@ -257,8 +278,10 @@
             android:layout_height="wrap_content">
             <TextView
                 android:gravity="center_vertical"
-                android:padding="10dp"
-                android:layout_width="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingStart="10dp"
+                android:layout_marginEnd="10dp"                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/logout"
                 android:textColor="@color/colorBlack"

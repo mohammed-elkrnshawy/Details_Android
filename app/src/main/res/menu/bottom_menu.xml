@@ -14,10 +14,6 @@
         android:icon="@drawable/ic_cart"/>
 
 
-    <item android:id="@+id/service"
-        android:title="@string/service"
-        android:icon="@drawable/ic_service"/>
-
 
     <item android:id="@+id/more"
         android:title="@string/category"

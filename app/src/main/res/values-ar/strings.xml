@@ -17,8 +17,8 @@
     <string name="most_rate">اعلى التقييمات</string>
     <string name="discount">تخفيضات</string>
     <string name="home">الرئيسية</string>
-    <string name="cart">العربة</string>
-    <string name="profile">الحساب</string>
+    <string name="cart">السلة</string>
+    <string name="profile">الحساب الشخصي</string>
     <string name="category">الاقسام</string>
     <string name="continue_shop">استمرار</string>
     <string name="total">الاجمالى</string>
@@ -57,5 +57,9 @@
     <string name="facebook">Facebook</string>
     <string name="twitter">Twitter</string>
     <string name="google">Google</string>
+    <string name="delete">حذف</string>
+    <string name="_delivery">توصيل</string>
+    <string name="payment">الدفع</string>
+    <string name="brief">الملخص</string>
 
 </resources>

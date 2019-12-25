@@ -7,6 +7,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import androidx.fragment.app.Fragment;
 
@@ -24,10 +25,16 @@ public class MoreFragment extends Fragment {
     @BindView(R.id.line)
     LinearLayout linear;
 
+    private TextView txtTitle;
+
     View view;
 
     public MoreFragment() {
         // Required empty public constructor
+    }
+
+    public MoreFragment(TextView txtTitle) {
+        this.txtTitle=txtTitle;
     }
 
 
@@ -46,6 +53,13 @@ public class MoreFragment extends Fragment {
         });
 
         return view;
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        txtTitle.setText(getResources().getString(R.string.more));
+        HomeActivity.changeBar(R.id.more,getResources().getString(R.string.more));
     }
 
 }

@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.RelativeLayout;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,20 +22,14 @@ import butterknife.ButterKnife;
 
 public class HomeActivity extends AppCompatActivity {
 
-    private BottomNavigationView navigation;
+    private static BottomNavigationView navigation;
     private RelativeLayout rlv_Search;
+    private TextView txtTitle;
 
     @BindView(R.id.toolbar)
     Toolbar toolbar;
 
-
-    /* private static userData userObject;
-    private String stringType;
-    private RelativeLayout relativeFlight,relativeHotel,relativeCar;
-    private ImageView imgFlight,imgHotel,imgCar;
-    private TextView txtFlight,txtHotel,txtCar;
-    private Bundle fragmentBundle=new Bundle();*/
-    private String preTitle = "" ;
+    private static String preTitle = "" ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -60,7 +55,6 @@ public class HomeActivity extends AppCompatActivity {
                     .commitAllowingStateLoss();
             preTitle = Title ;
         }
-
     }
 
     private void onBottomItemClicked(){
@@ -69,20 +63,20 @@ public class HomeActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                 switch (menuItem.getItemId()){
                     case R.id.home:
-                        setFragment(new MainHomeFragment(rlv_Search),getResources().getString(R.string.home));
+                        setFragment(new MainHomeFragment(rlv_Search,txtTitle),getResources().getString(R.string.home));
                         return true;
                     case R.id.cart:
-                        setFragment(new CartFragment(),getResources().getString(R.string.cart));
+                        setFragment(new CartFragment(txtTitle),getResources().getString(R.string.cart));
                         return true;
                     case R.id.profile:
-                        setFragment(new ProfileFragment(),getResources().getString(R.string.profile));
+                        setFragment(new ProfileFragment(txtTitle),getResources().getString(R.string.profile));
                         return true;
                     case R.id.more:
-                        setFragment(new MoreFragment(),getResources().getString(R.string.more));
+                        setFragment(new MoreFragment(txtTitle),getResources().getString(R.string.more));
                         return true;
-                    case R.id.service:
+                    /*case R.id.service:
                         setFragment(new ServiceFragment(),getResources().getString(R.string.service));
-                        return true;
+                        return true;*/
                 }
                 return false ;
             }
@@ -98,35 +92,14 @@ public class HomeActivity extends AppCompatActivity {
         }
 
         rlv_Search = view.findViewById(R.id.rlv_Search) ;
+        txtTitle = view.findViewById(R.id.txtTitle) ;
 
         toolbar.addView(view);
-
-
-        /*menu.setOnClickListener(v -> {
-            if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
-                drawerLayout.closeDrawers();
-            } else {
-                drawerLayout.openDrawer(GravityCompat.START);
-            }
-
-        });
-
-        cart.setOnClickListener(v -> {
-            if (SharedClass.isLogin) {
-                Intent intent = new Intent(HomeActivity.this, CartsActivity.class);
-                intent.putExtra("data", userdata);
-                startActivity(intent);
-            } else {
-                Toast.makeText(HomeActivity.this, getString(R.string.mustLogin), Toast.LENGTH_SHORT).show();
-            }
-        });
-        search.setOnClickListener(v -> {
-            Intent intent = new Intent(HomeActivity.this, SearchBranchActivity.class);
-            intent.putExtra("userObject", userdata);
-            startActivity(intent);
-        });*/
-
     }
 
+    public static void changeBar(int id,String Title){
+        preTitle=Title;
+       navigation.setSelectedItemId(id);
+    }
 
 }

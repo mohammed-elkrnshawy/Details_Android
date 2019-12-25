@@ -13,7 +13,7 @@
         <activity android:name=".PackageStores.StoresActivity" />
         <activity android:name=".PackageCart.CartPaymentActivity" />
         <activity android:name=".PackageCart.DeliveryActivity" />
-        <activity android:name=".PackageCart.CartCompleteActivity" />
+        <activity android:name=".PackageCart.CartBriefActivity" />
         <activity android:name=".PackageAuth.AuthActivity" />
         <activity android:name=".PackageAuth.LoginActivity" />
         <activity android:name=".PackageAuth.ForgetPasswordActivity" />
