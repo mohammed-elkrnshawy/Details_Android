@@ -51,4 +51,6 @@
     <string name="logout">Logout</string>
     <string name="search">Search</string>
     <string name="service">Service</string>
+    <string name="with_socialmedia">Login with social media</string>
+    <string name="or">Or</string>
 </resources>

@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.zt.details.PackageHome.HomeActivity;
@@ -19,8 +20,8 @@ import butterknife.OnClick;
 
 public class LoginActivity extends AppCompatActivity {
 
-    @BindView(R.id.edtEmail)
-    EditText edtEmail;
+    @BindView(R.id.txt_forget)
+    TextView txt_forget;
     @BindView(R.id.btn_login)
     Button btn_login;
 
@@ -35,6 +36,13 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(LoginActivity.this, HomeActivity.class));
+            }
+        });
+
+        txt_forget.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(LoginActivity.this, ForgetPasswordActivity.class));
             }
         });
 
