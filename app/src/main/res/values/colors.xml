@@ -7,4 +7,7 @@
     <color name="ColorWhite">#fff</color>
     <color name="ColorGray">#F5F5F5</color>
     <color name="ColorGray2">#BABFC8</color>
+    <color name="colorGoogle">#D94D29</color>
+    <color name="colorFB">#5271A7</color>
+    <color name="colorTwitter">#4BD0F7</color>
 </resources>

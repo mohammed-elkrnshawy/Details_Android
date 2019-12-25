@@ -9,7 +9,6 @@ import android.view.WindowManager;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.zt.details.PackageHome.HomeActivity;
 import com.zt.details.PackageTry.LanguageType;
 import com.zt.details.R;
 

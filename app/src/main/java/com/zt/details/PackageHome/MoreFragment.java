@@ -3,13 +3,12 @@ package com.zt.details.PackageHome;
 
 import android.content.Intent;
 import android.os.Bundle;
-
-import androidx.fragment.app.Fragment;
-
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
+
+import androidx.fragment.app.Fragment;
 
 import com.zt.details.PackageStores.StoresActivity;
 import com.zt.details.R;

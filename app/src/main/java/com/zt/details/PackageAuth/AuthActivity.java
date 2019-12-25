@@ -1,18 +1,17 @@
 package com.zt.details.PackageAuth;
 
-import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 import com.zt.details.R;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
-import butterknife.OnClick;
 
 public class AuthActivity extends AppCompatActivity {
 
@@ -32,7 +31,7 @@ public class AuthActivity extends AppCompatActivity {
         btn_register.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(AuthActivity.this,RegisterActivity.class));
+                startActivity(new Intent(AuthActivity.this, RegisterActivity.class));
             }
         });
 

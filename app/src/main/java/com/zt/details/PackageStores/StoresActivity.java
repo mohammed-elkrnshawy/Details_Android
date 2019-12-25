@@ -7,7 +7,6 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.zt.details.PackageTry.AdapterTry;
 import com.zt.details.PackageTry.AdapterTryStore;
 import com.zt.details.PackageTry.ClassTry;
 import com.zt.details.R;

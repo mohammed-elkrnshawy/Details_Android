@@ -9,7 +9,7 @@
     <string name="login">تسجيل الدخول</string>
     <string name="username">اسم المستخدم</string>
     <string name="register">انشاء جديد</string>
-    <string name="accept">موافق</string>
+    <string name="accept">عن طريق انشاء حساب انت موافق على</string>
     <string name="terms"><u>الشروط و الاحكام</u></string>
     <string name="send">ارسال</string>
     <string name="good_product">منتجات متميزة</string>
@@ -54,5 +54,8 @@
     <string name="service">خدمات</string>
     <string name="with_socialmedia">تسجيل الدخول عبر مواقع التواصل الاجتماعى</string>
     <string name="or">أو</string>
+    <string name="facebook">Facebook</string>
+    <string name="twitter">Twitter</string>
+    <string name="google">Google</string>
 
 </resources>
