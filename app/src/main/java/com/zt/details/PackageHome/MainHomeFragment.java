@@ -13,6 +13,8 @@ import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.denzcoskun.imageslider.ImageSlider;
+import com.denzcoskun.imageslider.models.SlideModel;
 import com.zt.details.PackageTry.AdapterTry;
 import com.zt.details.PackageTry.ClassTry;
 import com.zt.details.R;
@@ -36,6 +38,8 @@ public class MainHomeFragment extends Fragment {
     RecyclerView recycle_product;
     @BindView(R.id.recycle_rate)
     RecyclerView recycle_rate;
+    @BindView(R.id.image_slider)
+    ImageSlider image_slider;
 
     private RelativeLayout rlv_search;
     private TextView txtTitle;
@@ -62,6 +66,12 @@ public class MainHomeFragment extends Fragment {
         // Inflate the layout for this fragment
         view= inflater.inflate(R.layout.fragment_main_home, container, false);
         ButterKnife.bind(this,view);
+
+        List<SlideModel> imageList = new ArrayList<>();
+        imageList.add(new SlideModel(R.drawable.offers));
+        imageList.add(new SlideModel(R.drawable.offer2));
+        imageList.add(new SlideModel(R.drawable.offer3));
+
 
         classTry=new ClassTry();
         classTry.setName("تيشرت هالك");
@@ -92,6 +102,8 @@ public class MainHomeFragment extends Fragment {
         recycle_rate.setAdapter(adapterTry);
 
 
+        image_slider.setImageList(imageList, true); // centerCrop for all images
+        image_slider.startSliding(2500);
 
 
         return view;

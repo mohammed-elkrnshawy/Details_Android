@@ -14,28 +14,24 @@
        android:layout_height="match_parent"
        android:orientation="vertical">
 
-       <RelativeLayout
-           android:layout_marginEnd="10dp"
-           android:layout_marginStart="10dp"
-           android:background="@color/ColorGray"
+       <com.denzcoskun.imageslider.ImageSlider
+           android:focusable="true"
+           android:focusedByDefault="true"
+           android:id="@+id/image_slider"
+           app:error_image="@drawable/offers"
+           app:placeholder="@drawable/offers"
            android:layout_width="match_parent"
-           android:layout_height="wrap_content">
+           android:layout_height="175dp"
+           app:delay="0"
+           app:corner_radius="10"
+           android:layout_marginBottom="5dp"
+           android:layout_marginTop="10dp"
+           android:layout_marginStart="10dp"
+           android:layout_marginEnd="10dp"
+           app:unselected_dot="@drawable/default_unselected_dot"
+           app:selected_dot="@drawable/default_selected_dot"
+           />
 
-           <androidx.cardview.widget.CardView
-               android:layout_marginTop="10dp"
-               app:cardCornerRadius="10dp"
-               android:layout_width="match_parent"
-               android:layout_height="180dp"
-               >
-               <ImageView
-                   android:layout_width="match_parent"
-                   android:layout_height="match_parent"
-                   android:src="@drawable/offers"
-                   android:scaleType="fitXY"
-                   />
-           </androidx.cardview.widget.CardView>
-
-       </RelativeLayout>
 
        <RelativeLayout
            android:layout_marginTop="5dp"

@@ -102,4 +102,9 @@ public class HomeActivity extends AppCompatActivity {
        navigation.setSelectedItemId(id);
     }
 
+    @Override
+    protected void onPause() {
+        super.onPause();
+        preTitle="";
+    }
 }

@@ -1,10 +1,13 @@
 package com.zt.details.PackageProductDetails;
 
+import android.content.Context;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
 import androidx.fragment.app.Fragment;
 
 import com.zt.details.R;
@@ -20,6 +23,8 @@ public class ProductDetailsActivity extends AppCompatActivity {
     TextView txt_details;
     @BindView(R.id.txt_rate)
     TextView txt_rate;
+    @BindView(R.id.toolbar)
+    Toolbar toolbar;
 
     private String preTitle = "" ;
 
@@ -28,8 +33,8 @@ public class ProductDetailsActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_product_details);
         ButterKnife.bind(this);
+        setToolBar();
         setFragment(new ProductFragment(),getResources().getString(R.string.product));
-
         txt_rate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -86,4 +91,14 @@ public class ProductDetailsActivity extends AppCompatActivity {
 
     }
 
+    private void setToolBar(){
+        setSupportActionBar(toolbar);
+        final LayoutInflater inflator = (LayoutInflater) this.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
+        View view = null;
+        if (inflator != null) {
+            view = inflator.inflate(R.layout.bar_product_details, null);
+        }
+
+        toolbar.addView(view);
+    }
 }
