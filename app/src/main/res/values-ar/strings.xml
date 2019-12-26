@@ -61,5 +61,8 @@
     <string name="_delivery">توصيل</string>
     <string name="payment">الدفع</string>
     <string name="brief">الملخص</string>
+    <string name="price">السعر</string>
+    <string name="boo_service">حجز الخدمة</string>
+    <string name="booking">حجوزاتى</string>
 
 </resources>

@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/NoTitle">
-        <activity android:name=".PackageStores.ProductsActivity"></activity>
+        <activity android:name=".PackageBooking.MyBookingActivity"></activity>
+        <activity android:name=".PackageProductDetails.ServiceDetailsActivity" />
+        <activity android:name=".PackageStores.ProductsActivity" />
         <activity android:name=".PackageStores.StoresActivity" />
         <activity android:name=".PackageCart.CartPaymentActivity" />
         <activity android:name=".PackageCart.DeliveryActivity" />

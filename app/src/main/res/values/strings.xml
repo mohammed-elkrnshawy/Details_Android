@@ -60,4 +60,7 @@
     <string name="_delivery">Delivery</string>
     <string name="payment">Paymnet</string>
     <string name="brief">Brief</string>
+    <string name="price">Price</string>
+    <string name="boo_service">Book a service</string>
+    <string name="booking">My booking</string>
 </resources>

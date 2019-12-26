@@ -5,13 +5,15 @@ import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.zt.details.PackageStores.ProductsActivity;
+import com.zt.details.PackageProductDetails.ProductDetailsActivity;
+import com.zt.details.PackageProductDetails.ServiceDetailsActivity;
 import com.zt.details.R;
 
 import java.util.List;
@@ -19,12 +21,12 @@ import java.util.List;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
-public class AdapterTryStore extends RecyclerView.Adapter<AdapterTryStore.ViewHolder> {
+public class AdapterTryProduct extends RecyclerView.Adapter<AdapterTryProduct.ViewHolder> {
 
     private Context context ;
     private List<ClassTry> offerList ;
 
-    public AdapterTryStore(Context context, List<ClassTry> offerList) {
+    public AdapterTryProduct(Context context, List<ClassTry> offerList) {
         this.context = context;
         this.offerList = offerList;
     }
@@ -32,7 +34,7 @@ public class AdapterTryStore extends RecyclerView.Adapter<AdapterTryStore.ViewHo
     @NonNull
     @Override
     public ViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
-        View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.view_store , viewGroup , false) ;
+        View view = LayoutInflater.from(viewGroup.getContext()).inflate(R.layout.view_product_item , viewGroup , false) ;
         return new ViewHolder(view);
     }
 
@@ -41,7 +43,11 @@ public class AdapterTryStore extends RecyclerView.Adapter<AdapterTryStore.ViewHo
 
 
         holder.txt_name.setText(offerList.get(i).getName());
-
+        holder.txt_price.setText(offerList.get(i).getPrice()+" "+"جنيه");
+        if (i==0)
+            holder.imgProduct.setImageDrawable(context.getResources().getDrawable(R.drawable.car));
+        else
+            holder.imgProduct.setImageDrawable(context.getResources().getDrawable(R.drawable.choco));
             //holder.layout.setVisibility(View.VISIBLE);
             /*holder.layoutTrip.setVisibility(View.GONE);
             holder.txtPassenger.setText(offerList.get(i).getPassengers());
@@ -55,11 +61,17 @@ public class AdapterTryStore extends RecyclerView.Adapter<AdapterTryStore.ViewHo
             holder.txtOffer.setText(String.format("%s %s", offerList.get(i).getOffer(), offerList.get(i).getCurrency()));
         */
 
-        holder.parent.setOnClickListener(new View.OnClickListener() {
+        holder.card_parent.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent=new Intent(context, ProductsActivity.class);
+                Intent intent;
+                if (i==0)
+                    intent=new Intent(context, ServiceDetailsActivity.class);
+                else
+                    intent=new Intent(context, ProductDetailsActivity.class);
+
                 context.startActivity(intent);
+
             }
         });
 
@@ -73,10 +85,14 @@ public class AdapterTryStore extends RecyclerView.Adapter<AdapterTryStore.ViewHo
     class ViewHolder extends RecyclerView.ViewHolder{
 
 
-        @BindView(R.id.parent)
-        LinearLayout parent;
         @BindView(R.id.txt_name)
         TextView txt_name;
+        @BindView(R.id.txt_price)
+        TextView txt_price;
+        @BindView(R.id.card_parent)
+        LinearLayout card_parent;
+        @BindView(R.id.imgProduct)
+        ImageView imgProduct;
 
 
         public ViewHolder(@NonNull View view) {

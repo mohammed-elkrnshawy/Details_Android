@@ -41,7 +41,7 @@ public class AdapterTry extends RecyclerView.Adapter<AdapterTry.ViewHolder> {
 
 
         holder.txt_name.setText(offerList.get(i).getName());
-        holder.txt_price.setText(offerList.get(i).getPrice()+" "+"$");
+        holder.txt_price.setText(offerList.get(i).getPrice()+" "+"جنيه");
             //holder.layout.setVisibility(View.VISIBLE);
             /*holder.layoutTrip.setVisibility(View.GONE);
             holder.txtPassenger.setText(offerList.get(i).getPassengers());

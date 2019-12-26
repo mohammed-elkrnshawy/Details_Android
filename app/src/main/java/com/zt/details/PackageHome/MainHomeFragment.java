@@ -1,14 +1,19 @@
 package com.zt.details.PackageHome;
 
 
+import android.app.Activity;
 import android.os.Bundle;
+import android.util.Log;
+import android.view.KeyEvent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -45,7 +50,6 @@ public class MainHomeFragment extends Fragment {
     private TextView txtTitle;
 
     private ClassTry classTry;
-    private List<ClassTry> tryList=new ArrayList<>();
     private LinearLayoutManager layoutManager ;
     private AdapterTry adapterTry;
 
@@ -72,6 +76,7 @@ public class MainHomeFragment extends Fragment {
         imageList.add(new SlideModel(R.drawable.offer2));
         imageList.add(new SlideModel(R.drawable.offer3));
 
+        List<ClassTry> tryList=new ArrayList<>();
 
         classTry=new ClassTry();
         classTry.setName("تيشرت هالك");
@@ -87,7 +92,7 @@ public class MainHomeFragment extends Fragment {
 
         layoutManager = new GridLayoutManager(getContext(),2) ;
         recycle_product.setLayoutManager(layoutManager);
-        //recycle.setHasFixedSize(true);
+        recycle_product.setHasFixedSize(true);
         adapterTry = new AdapterTry(getContext() , tryList);
         recycle_product.setAdapter(adapterTry);
 
@@ -95,11 +100,14 @@ public class MainHomeFragment extends Fragment {
         layoutManager = new GridLayoutManager(getContext(),2) ;
         recycle_discount.setLayoutManager(layoutManager);
         recycle_discount.setAdapter(adapterTry);
+        recycle_discount.setHasFixedSize(true);
+
 
 
         layoutManager = new GridLayoutManager(getContext(),2) ;
         recycle_rate.setLayoutManager(layoutManager);
         recycle_rate.setAdapter(adapterTry);
+        recycle_rate.setHasFixedSize(true);
 
 
         image_slider.setImageList(imageList, true); // centerCrop for all images
@@ -115,6 +123,18 @@ public class MainHomeFragment extends Fragment {
         rlv_search.setVisibility(View.VISIBLE);
         txtTitle.setText(getResources().getString(R.string.home));
         HomeActivity.changeBar(R.id.home,getResources().getString(R.string.home));
+        getView().setFocusableInTouchMode(true);
+        getView().requestFocus();
+        getView().setOnKeyListener(new View.OnKeyListener() {
+            @Override
+            public boolean onKey(View v, int keyCode, KeyEvent event) {
+                if (event.getAction() == KeyEvent.ACTION_UP && keyCode == KeyEvent.KEYCODE_BACK) {
+                    ((Activity)getContext()).finishAffinity();
+                    return true ;
+                }
+                return false;
+            }
+        });
     }
 
     @Override
